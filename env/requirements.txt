@@ -1,0 +1,8 @@
+snakemake==8.10.7
+biopython
+pandas
+numpy
+matplotlib
+pyyaml
+jinja2
+requests

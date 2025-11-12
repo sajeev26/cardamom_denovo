@@ -1,0 +1,13 @@
+threads: 8
+sra_list: "data/sra.txt"
+
+# Reference
+genome_fasta: "ref/genome.fa"
+genome_gtf: "ref/genome.gtf"
+genome_index: "ref/index"
+
+# Tools
+aligner: "hisat2"  # or "star"
+
+# Output
+outdir: "results"
