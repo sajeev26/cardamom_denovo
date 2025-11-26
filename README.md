@@ -88,3 +88,50 @@ All tools are installed via conda.
 Pipeline is fully version-controlled.
 
 Uses Snakemake to ensure deterministic execution.
+
+# How to Run the Workflow
+1. Install Snakemake with Conda
+
+conda create -n cardamom-lncRNA snakemake -c bioconda -c conda-forge
+conda activate cardamom-lncRNA
+
+2. Clone this repository
+
+git clone https://github.com/sajeev26/cardamom_denovo.git
+
+cd cardamom_denovo
+
+3. Add SRA accessions
+
+Place SRA IDs in:
+
+data/sra.txt
+
+4. Run the workflow
+
+snakemake --use-conda --cores 8
+
+
+# Final Output
+
+The main output file is:
+
+results/lncRNA/confident_lncRNA.csv
+
+This table contains final high-confidence lncRNA transcripts filtered using:
+
+> CPC2 label
+
+> PLEK label & score
+
+> Coding probability
+
+> ORF integrity
+
+> Peptide length
+
+> Fickett score
+
+> Duplicate removal
+
+The FASTA sequences of retained lncRNAs can also be extracted using an included Python script.
