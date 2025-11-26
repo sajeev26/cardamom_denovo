@@ -135,3 +135,6 @@ This table contains final high-confidence lncRNA transcripts filtered using:
 > Duplicate removal
 
 The FASTA sequences of retained lncRNAs can also be extracted using an included Python script.
+
+# For your queries and suggestions
+Reach out to 'sajeevrajssr@gmail.com'
